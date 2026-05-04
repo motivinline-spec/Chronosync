@@ -7,9 +7,8 @@ import { defineConfig } from "vite";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// https://vite.dev/config/
 export default defineConfig({
-  base: './', // This ensures all paths are relative to your folder
+  base: '', // Forces relative paths for all assets
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
@@ -19,6 +18,6 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
-    sourcemap: false,
+    emptyOutDir: true
   }
 });
