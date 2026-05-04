@@ -1,14 +1,20 @@
 {
-  "id": "com.chronosync.timer",
+  "id": "com.chronosync.v1",
   "name": "ChronoSync Precision Timer",
   "short_name": "ChronoSync",
-  "description": "Professional stopwatch, timer, and events sequencer.",
-  "start_url": "index.html",
+  "description": "Professional stopwatch, timer, and events sequencer with smartwatch sync and PDF reports.",
+  "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",
   "theme_color": "#2563eb",
+  "categories": [
+    "productivity",
+    "utilities",
+    "health",
+    "sports"
+  ],
   "icons": [
     {
       "src": "icon-192.png",
@@ -33,6 +39,34 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-mobile.png",
+      "sizes": "1024x1792",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Stopwatch and Timer view"
+    },
+    {
+      "src": "screenshot-desktop.png",
+      "sizes": "1792x1024",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Event sequencer dashboard"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Start Stopwatch",
+      "url": "./?tab=stopwatch",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "New Timer",
+      "url": "./?tab=timer",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
     }
   ]
 }
