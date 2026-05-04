@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChronoSync - Precision Timer & Stopwatch</title>
+    <meta name="description" content="A professional-grade stopwatch, countdown timer, and event sequencer with smartwatch sync.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ChronoSync - Precision Timing">
+    <meta property="og:description" content="Professional timing tools for workflow, exercise, and events.">
+    <meta property="og:image" content="/icon-512.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="ChronoSync - Precision Timing">
+    <meta property="twitter:description" content="Professional timing tools for workflow, exercise, and events.">
+    <meta property="twitter:image" content="/icon-512.png">
+
+    <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
+    <link rel="icon" type="image/png" href="/icon-192.png">
+    <meta name="theme-color" content="#2563eb">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="icon-192.png">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('SW registered!', reg))
+            .catch(err => console.log('SW registration failed!', err));
+        });
+      }
+    </script>
+  </body>
+</html>
