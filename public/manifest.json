@@ -1,14 +1,15 @@
 {
-  "id": "com.chronosync.app",
-  "name": "ChronoSync - Precision Timer",
+  "id": "com.chronosync.timer",
+  "name": "ChronoSync Precision Timer",
   "short_name": "ChronoSync",
-  "description": "Professional stopwatch, timer, and event sequencer with smartwatch sync and PDF reports.",
-  "start_url": "/",
-  "scope": "/",
+  "description": "Professional stopwatch, timer, and events sequencer with smartwatch sync.",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",
   "theme_color": "#2563eb",
+  "prefer_related_applications": false,
   "categories": ["productivity", "utilities", "health"],
   "icons": [
     {
@@ -34,6 +35,20 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-mobile.png",
+      "sizes": "1024x1792",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "screenshot-desktop.png",
+      "sizes": "1792x1024",
+      "type": "image/png",
+      "form_factor": "wide"
     }
   ]
 }
