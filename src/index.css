@@ -1,18 +1,46 @@
 @import "tailwindcss";
 
 @layer base {
-  body {
-    @apply antialiased;
+  :root {
+    --pb-safe: env(safe-area-inset-bottom);
   }
 }
 
-/* Hide spin buttons for number inputs */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.pb-safe {
+  padding-bottom: var(--pb-safe);
 }
 
-input[type=number] {
-  -moz-appearance: textfield;
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body {
+  touch-action: manipulation;
+  overscroll-behavior-y: none;
+  -webkit-tap-highlight-color: transparent;
+  background-color: #0a0f18;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.glow-blue {
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.5);
+}
+
+.glow-white {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+@keyframes pulse-glow {
+  0% { box-shadow: 0 0 5px rgba(37, 99, 235, 0.4); }
+  50% { box-shadow: 0 0 20px rgba(37, 99, 235, 0.7); }
+  100% { box-shadow: 0 0 5px rgba(37, 99, 235, 0.4); }
+}
+
+.animate-glow {
+  animation: pulse-glow 2s infinite;
 }
