@@ -1,8 +1,8 @@
 {
-  "name": "ChronoSync Precision Timing",
+  "name": "ChronoSync",
   "short_name": "ChronoSync",
   "description": "High-precision timing tool for intervals, tasks, and sequences.",
-  "start_url": ".",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#0a0f18",
   "theme_color": "#2563eb",
@@ -33,6 +33,5 @@
       "purpose": "maskable"
     }
   ],
-  "categories": ["productivity", "fitness", "utilities"],
-  "id": "com.chronosync.app"
+  "categories": ["productivity", "fitness", "utilities"]
 }
