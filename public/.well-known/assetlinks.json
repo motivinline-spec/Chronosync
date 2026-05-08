@@ -2,7 +2,7 @@
       "relation": ["delegate_permission/common.handle_all_urls"],
       "target": {
         "namespace": "android_app",
-        "package_name": "io.github.motivinline_chronosync",
-        "sha256_cert_fingerprints": ["38:DB:27:C6:A9:F1:7C:E4:01:E3:46:57:1F:8A:92:4A:CA:F2:D2:EB:D0:E6:EA:2A:0C:B7:0E:C6:5E:53:EB:1E"]
+        "package_name": "io.github.motivinline_spec.twa",
+        "sha256_cert_fingerprints": ["C2:8D:52:4A:DC:AC:0D:D6:A4:17:40:3B:CC:04:3B:9F:26:DB:E2:80:B7:27:86:E6:6D:DC:D4:93:D0:50:14:65"]
       }
     }]
